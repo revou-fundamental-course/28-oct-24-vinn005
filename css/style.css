@@ -1,1 +1,20 @@
 /* Ini CSS */
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.color-section {
+    background-color: aliceblue;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
