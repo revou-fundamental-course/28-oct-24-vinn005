@@ -5,6 +5,23 @@ main {
     justify-content: space-around;
 }
 
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    border: 0;
+    background-color: blue;
+    border: 8 px;
+    border-radius: 8px;
+}
+
 .color-section {
     background-color: aliceblue;
     padding: 8px;
@@ -15,6 +32,17 @@ main {
     text-align: center;
 }
 
+#result {
+    font-size: 30px;
+    font-weight: bold;
+}
+
 footer {
     text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+    main {
+        flex-direction: column;
+    }
 }

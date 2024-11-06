@@ -24,13 +24,14 @@
         <form class="color-section">
             <div>
                 <label for="berat-badan"> Berat Badan: </label>
-                <input id="berat-badan">
+                <input id="berat-badan" type="number">
             </div>
-
-            <button>Hitung BMI</button>
-            <button>Reset</button>
         </form>
-
+        <div> 
+            <button onclick="validateForm()">Hitung BMI</button>
+            <button>Reset</button>
+        </div>
+         
         <div>
             <header>
                 <h2>Keunggulan Kalkulator</h2>
@@ -65,6 +66,7 @@
     <footer>
         <span> Made by Davin </span>
      </footer>
+     <script src="js/script.js"></script>
 </body>
 
 </html>
