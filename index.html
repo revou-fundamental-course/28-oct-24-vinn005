@@ -37,18 +37,18 @@
 
                 <!-- Masukkan berat badan -->
                 <label for="berat-badan"> Berat Badan (kg) </label> <br>
-                <input id="berat-badan" type="number" min="1" required> <br> <br>
+                <input id="berat-badan" type="number" min="0" required> <br> <br>
                 
                 <!-- Masukkan usia -->
                 <label for="usia"> Usia (tahun) </label> <br>
-                <input id="usia" type="number" min="1" required> <br> <br>
+                <input id="usia" type="number" min="0" required> <br> <br>
 
                 <!-- Masukkan tinggi -->
                 <label for="tinggi"> Tinggi (meter) </label> <br>
-                <input id="tinggi" type="number" min="1" max="2" required> <br> <br>
+                <input id="tinggi" type="number" min="0" max="2.5" required> <br> <br>
             </div>
             <button onclick='validateForm(); hitungBMI(event)' id="hitung-bmi"> Hitung BMI </button>
-            <button onclick='reload(event)' id="reset"> Reset </button>
+            <input type="reset" id="tombol-reset"></input>
         </form>
     </div>
 

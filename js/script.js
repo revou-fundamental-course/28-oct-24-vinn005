@@ -4,9 +4,11 @@ function validateForm() {
     let tinggiBadan = document.getElementById('tinggi').value;
     let usiaSekarang = document.getElementById('usia').value;
 
-    // Kondisi Validasi jika form kosong
-    if (beratBadan == '' || tinggiBadan == '' || usiaSekarang == '' || parseInt(beratBadan, tinggiBadan, usiaSekarang) <= 1) {
+    // Kondisi validasi jika form kosong atau tidak sesuai kriteria
+    if (beratBadan == '' || tinggiBadan == '' || usiaSekarang == '') {
         alert('Inputan Anda Tidak Valid'); document.getElementById('result info info2').innerHTML = '-'
+    } else if (tinggiBadan > 2.5) {
+        alert ('Inputan Anda Tidak Valid'); document.getElementById('result info info2').innerHTML = '-'
     }
 }
 
@@ -38,16 +40,5 @@ function hitungBMI(event) {
     } else if (bmi >= 30) {
         document.getElementById('info').innerHTML = 'Anda Kegemukan (Obesitas)'
         document.getElementById('info2').innerHTML = 'Penting untuk berkonsultasi dengan dokter atau ahli gizi untuk mendapatkan panduan penurunan berat badan yang sesuai. Pola makan rendah kalori dan tinggi serat, bersama olahraga teratur, sangat direkomendasikan. Latihan aerobik, seperti berlari atau bersepeda, serta latihan kekuatan dapat membantu mengurangi lemak tubuh secara efektif. Dalam kasus tertentu, dokter mungkin menyarankan metode lain, seperti terapi, program penurunan berat badan, atau intervensi medis jika diperlukan.'
-    }
-}
-
-// Button reset
-function reload(event) {
-    event.preventDefault;
-
-    if (beratBadan == '' || tinggiBadan == '' || usiaSekarang == '' || parseInt(beratBadan, tinggiBadan, usiaSekarang) <= 1) {
-        window.location.reload;
-    } else {
-        window.location.reload;
     }
 }

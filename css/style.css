@@ -61,6 +61,7 @@ input[type=number] {
     border-radius: 3px;
     font-family: monospace;
     font-size: 16px;
+    transition-duration: 0,4s;
 }
 
 #hitung-bmi:hover {
@@ -69,7 +70,7 @@ input[type=number] {
   }
 
 /* Style Button Reset */
-#reset {
+#tombol-reset {
     background-color: white;
     color: red;
     border: 2px solid red;
@@ -80,7 +81,7 @@ input[type=number] {
     transition-duration: 0.4s;
 }
 
-#reset:hover {
+#tombol-reset:hover {
     border: 2px solid red;
     background-color: red;
     color: aqua;
