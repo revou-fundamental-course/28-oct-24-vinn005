@@ -24,7 +24,7 @@
         </div>
 
         <!-- Form -->
-        <form class="color-section">
+        <form id="form1" class="color-section">
             <div>
                 <!-- Pilihan jenis kelamin -->
                 <label for="pilihan-kelamin"> Jenis Kelamin </label> <br>
@@ -37,19 +37,18 @@
 
                 <!-- Masukkan berat badan -->
                 <label for="berat-badan"> Berat Badan (kg) </label> <br>
-                <input id="berat-badan" type="number" min="0"> <br> <br>
+                <input id="berat-badan" type="number" min="1" required> <br> <br>
                 
                 <!-- Masukkan usia -->
                 <label for="usia"> Usia (tahun) </label> <br>
-                <input id="usia" type="number" min="0"> <br> <br>
+                <input id="usia" type="number" min="1" required> <br> <br>
 
                 <!-- Masukkan tinggi -->
                 <label for="tinggi"> Tinggi (meter) </label> <br>
-                <input id="tinggi" type="number" min="0"> <br> <br>
-
-                <button onclick="validateForm()" id="hitung-bmi"> Hitung BMI </button>
-                <button id="reset"> Reset </button>
+                <input id="tinggi" type="number" min="1" max="2" required> <br> <br>
             </div>
+            <button onclick='validateForm(); hitungBMI(event)' id="hitung-bmi"> Hitung BMI </button>
+            <button onclick='reload(event)' id="reset"> Reset </button>
         </form>
     </div>
 
@@ -61,17 +60,18 @@
 
         <!-- Hasil Kalkulasi -->
         <section class="color-section text-center">
-            <p id="result"> 0 </p>
+            <p id="result"></p>
 
         <!-- Info dari hasil -->
          <div>
-            <p id="info-hasil"> BLABLABLA </p>
+            <p id="info"></p>
+            <p id="info2"></p>
          </div>
         </section>
 
         <!-- Paragraf penutup -->
         <article>
-            <p> ***Perlu dicatat bahwa <b> BMI tidak memperhitungkan komposisi tubuh, </b> seperti perbedaan antara massa otot dan massa lemak. Orang dengan massa otot tinggi, seperti atlet, bisa memiliki BMI yang tinggi tanpa memiliki kelebihan lemak. Di sisi lain, BMI mungkin tidak selalu akurat untuk anak-anak, lansia, atau individu dengan kondisi medis tertentu. </p>
+            <p> ***Perlu dicatat bahwa <b> BMI tidak memperhitungkan komposisi tubuh, </b> seperti perbedaan antara massa otot dan massa lemak. <b>Orang dengan massa otot tinggi, seperti atlet, bisa memiliki BMI yang tinggi tanpa memiliki kelebihan lemak.</b> Di sisi lain, BMI mungkin tidak selalu akurat untuk anak-anak, lansia, atau individu dengan kondisi medis tertentu. </p>
         </article>
     </div>
     </main>

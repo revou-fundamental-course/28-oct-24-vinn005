@@ -19,7 +19,6 @@ h1 {
 /* Agar column tidak mepet dengan border kiri & kanan */
 #column-1 {
     margin-left: 10px;
-    padding-right: 100px;
 }
 
 #column-2 {
@@ -61,9 +60,7 @@ input[type=number] {
     border: 2px solid black;
     border-radius: 3px;
     font-family: monospace;
-    font-size: 11px;
-    font-weight: bold;
-    transition-duration: 0.4s;
+    font-size: 16px;
 }
 
 #hitung-bmi:hover {
@@ -78,7 +75,7 @@ input[type=number] {
     border: 2px solid red;
     border-radius: 3px;
     font-family: monospace;
-    font-size: 11px;
+    font-size: 16px;
     font-weight: bold;
     transition-duration: 0.4s;
 }
@@ -107,8 +104,16 @@ input[type=number] {
     font-weight: bold;
 }
 
-#info-hasil {
+#info {
     text-align: center;
+}
+
+#info2 {
+    color: red;
+    font-weight: bold;
+    font-size : 16px;
+    text-align: center;
+    font-variant: small-caps;
 }
 
 /* Style footer */
@@ -137,7 +142,8 @@ footer {
     #column-2 {
     margin-left: 10px;
     }
-    section {
+    
+    #hasil {
         text-align: center;
     }
 }
