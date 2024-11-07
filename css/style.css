@@ -133,7 +133,7 @@ footer {
     }
     .column {
         float: left;
-        width: 92%;
+        width: 89%;
         text-align: --webkit-center;
     }
     #column-1 {
@@ -142,6 +142,22 @@ footer {
 
     #column-2 {
     margin-left: 10px;
+    }
+    
+    #hasil {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    main {
+        flex-direction: column ;
+        
+    }
+    .column {
+        float: left;
+        width: 87%;
+        text-align: --webkit-center;
     }
     
     #hasil {
