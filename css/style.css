@@ -1,48 +1,143 @@
-/* Ini CSS */
-
+/* Style bagian Main */
 main {
+    outline: solid 5px aqua ;
+    border: solid 1px;
     display: flex;
     justify-content: space-around;
+    font-family: "Monaco", monospace;
 }
 
+/* Style tulisan "Kalkulator BMI" dan "Hasil" */
+h1 {
+    font-size: xxx-large;
+    text-decoration: underline;
+    text-shadow: 0 0 3px aqua;
+    margin-bottom: 0px;
+    font-variant: small-caps;
+}
+
+/* Agar column tidak mepet dengan border kiri & kanan */
+#column-1 {
+    margin-left: 10px;
+    padding-right: 100px;
+}
+
+#column-2 {
+    margin-right: 10px;
+}
+
+/* Membagi 2 section dengan column */
+.column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+  }  
+
+form {
+    font-weight: bold;
+}
+
+/* Style semua konten */
+article {
+    text-align: justify;
+    font-size: 12px;
+}
+
+/* Style kolom input */
 input[type=number] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #CCC;
+    border: 1px solid grey;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
-button {
-    border: 0;
-    background-color: blue;
-    border: 8 px;
-    border-radius: 8px;
+/* Style button Submit */
+#hitung-bmi {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 11px;
+    font-weight: bold;
+    transition-duration: 0.4s;
 }
 
+#hitung-bmi:hover {
+    background-color: black;
+    color: aqua;
+  }
+
+/* Style Button Reset */
+#reset {
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 11px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+#reset:hover {
+    border: 2px solid red;
+    background-color: red;
+    color: aqua;
+}
+
+/* Style section form dan hasil */
 .color-section {
-    background-color: aliceblue;
+    background-color: rgba(9, 240, 240, 0.212);
     padding: 8px;
     border-radius: 8px;
 }
 
 .text-center {
-    text-align: center;
+    font-size: 30px;
 }
 
+/* Style Hasil */
 #result {
-    font-size: 30px;
+    text-align: center;
+    font-size: 50px;
     font-weight: bold;
 }
 
-footer {
+#info-hasil {
     text-align: center;
 }
 
-@media only screen and (max-width: 480px) {
+/* Style footer */
+footer {
+    font-family: "Brush Script MT", cursive;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media Query */
+@media only screen and (max-width: 800px) {
     main {
-        flex-direction: column;
+        flex-direction: column ;
+        
+    }
+    .column {
+        float: left;
+        width: 92%;
+        text-align: --webkit-center;
+    }
+    #column-1 {
+    margin-right: 10px;
+}
+
+    #column-2 {
+    margin-left: 10px;
+    }
+    section {
+        text-align: center;
     }
 }

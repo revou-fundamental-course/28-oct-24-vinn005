@@ -10,61 +10,75 @@
 <body>
     <main>
         <!-- Section form -->
-    <section>
+    <div id="column-1" class="column">
         <div>
             <header> 
                 <h1> Kalkulator BMI </h1>
             </header>
-    
+
+            <!-- Konten Paragraf Pertama -->
             <article>
-                <p>Berat badan....</p>
+                <p> <b><i>BMI (Body Mass Index)</i></b> adalah alat ukur yang digunakan untuk menilai apakah berat badan seseorang tergolong sehat atau tidak, dengan memperhitungkan berat dan tinggi badan.
+                <br> <br> Ukur BMI kamu di bawah sini yuk!</p>
             </article>
         </div>
 
+        <!-- Form -->
         <form class="color-section">
             <div>
-                <label for="berat-badan"> Berat Badan: </label>
-                <input id="berat-badan" type="number">
+                <!-- Pilihan jenis kelamin -->
+                <label for="pilihan-kelamin"> Jenis Kelamin </label> <br>
+                
+                <input name="pilihan-kelamin" id="jenis-kelamin" type="radio" value="Pria">
+                <label for="jenis-kelamin"> Pria </label>
+
+                <input name="pilihan-kelamin" id="jenis-kelamin" type="radio" value="Wanita" required>
+                <label for="jenis-kelamin"> Wanita </label> <br><br>
+
+                <!-- Masukkan berat badan -->
+                <label for="berat-badan"> Berat Badan (kg) </label> <br>
+                <input id="berat-badan" type="number" min="0"> <br> <br>
+                
+                <!-- Masukkan usia -->
+                <label for="usia"> Usia (tahun) </label> <br>
+                <input id="usia" type="number" min="0"> <br> <br>
+
+                <!-- Masukkan tinggi -->
+                <label for="tinggi"> Tinggi (meter) </label> <br>
+                <input id="tinggi" type="number" min="0"> <br> <br>
+
+                <button onclick="validateForm()" id="hitung-bmi"> Hitung BMI </button>
+                <button id="reset"> Reset </button>
             </div>
         </form>
-        <div> 
-            <button onclick="validateForm()">Hitung BMI</button>
-            <button>Reset</button>
-        </div>
-         
-        <div>
-            <header>
-                <h2>Keunggulan Kalkulator</h2>
-            </header>
-    
-            <article>
-                <p>Blablabla</p>
-            </article>
-        </div>
-    </section>
+    </div>
 
-    <!-- Section result -->
-    <section>
+    <!-- Header result -->
+    <div id="column-2" class="column">
         <header>
             <h1> Hasil </h1>
         </header>
 
         <!-- Hasil Kalkulasi -->
         <section class="color-section text-center">
-            <h4> Hasil Kalkulasi </h4>
-
-            <p id="result"> 24.5 </p>
-        </section>
+            <p id="result"> 0 </p>
 
         <!-- Info dari hasil -->
-         <article>
-            <p> BLABLABLA </p>
-         </article>
-    </section>
+         <div>
+            <p id="info-hasil"> BLABLABLA </p>
+         </div>
+        </section>
+
+        <!-- Paragraf penutup -->
+        <article>
+            <p> ***Perlu dicatat bahwa <b> BMI tidak memperhitungkan komposisi tubuh, </b> seperti perbedaan antara massa otot dan massa lemak. Orang dengan massa otot tinggi, seperti atlet, bisa memiliki BMI yang tinggi tanpa memiliki kelebihan lemak. Di sisi lain, BMI mungkin tidak selalu akurat untuk anak-anak, lansia, atau individu dengan kondisi medis tertentu. </p>
+        </article>
+    </div>
     </main>
 
+    <!-- Watermark hehehe -->
     <footer>
-        <span> Made by Davin </span>
+        <span> Made by Davin Sariputra © </span>
      </footer>
      <script src="js/script.js"></script>
 </body>
